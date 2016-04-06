@@ -1,0 +1,33 @@
+@import 'compass/reset';
+ @charset "UTF-8";
+ @import "compass/css3";
+
+ .lock-block {
+   width: 500px;
+   height: 40px;
+   margin: 0 auto;
+   padding: 0;
+   @include border-radius(5px);
+   border: 1px solid #c1c1c1;
+   position: relative;
+   left: 0;
+   top: 0;
+   line-height: 40px;
+   text-align: center;
+ }
+ .slider-block {
+   width: 50px;
+   height: 38px;
+   border: 1px solid #c1c1c1;
+   @include border-radius(5px);
+   position: absolute;
+   left: 0;
+   top: 0;
+   line-height: 38px;
+   text-align: center;
+   z-index: 99;
+   background: #FFF;
+ }
+ .slider-block:hover {
+   cursor: move;
+ }
